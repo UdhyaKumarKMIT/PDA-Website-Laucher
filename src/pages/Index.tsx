@@ -21,7 +21,7 @@ const Index = () => {
           {/* Center Content */}
           <div className="text-center space-y-6 animate-scale-in">
             {/* University Title */}
-            <h1 className="text-sm md:text-base font-semibold text-foreground tracking-wide uppercase">
+            <h1 className="text-base md:text-lg lg:text-xl font-semibold text-foreground tracking-wide uppercase">
               Anna University – Madras Institute of Technology Campus
             </h1>
             
@@ -31,7 +31,7 @@ const Index = () => {
             </p>
             
             {/* PDA Title */}
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary leading-tight">
               Personality Development Association
             </h2>
             
