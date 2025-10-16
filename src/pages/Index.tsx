@@ -12,25 +12,45 @@ const Index = () => {
       {/* Optional soft overlay for better contrast */}
       <div className="absolute inset-0 bg-background/40 backdrop-blur-[2px]" />
 
-      <div className="container mx-auto relative z-10">
+      <div className="container mx-auto mb-0 relative z-10">
         {/* University Header */}
-        <div className="text-center">
-          <h1 className="text-2xl font-bold text-foreground uppercase">
-            Anna University – Madras Institute of Technology Campus
-          </h1>
+        <div className="text-center flex flex-col items-center">
+  {/* Heading row with logos */}
+  <div className="flex items-center justify-center space-x-4">
+    {/* Left Logo */}
+    <img
+      src="mitlogo.png"
+      alt="Anna University Logo"
+      className="w-12 h-12 md:w-16 md:h-16 object-contain"
+    />
 
-          <p className="text-lg text-muted-foreground mt-2">
-            We cordially invite you to the 42<sup>nd</sup> year inauguration of
-          </p>
-        </div>
+    {/* Main Heading */}
+    <h1 className="text-2xl md:text-3xl font-bold text-foreground uppercase">
+      Anna University – Madras Institute of Technology
+    </h1>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10 items-center max-w-7xl mx-auto mt-8">
+    {/* Right Logo */}
+    <img
+      src="pda.png"
+      alt="MIT Logo"
+      className="w-12 h-12 md:w-16 md:h-16 object-contain"
+    />
+  </div>
+
+  {/* Subtitle */}
+  <p className="text-lg text-muted-foreground ">
+    We cordially invite you to the 42<sup>nd</sup> year inauguration of
+  </p>
+</div>
+
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10 items-center max-w-7xl mx-auto">
           {/* Left Character */}
           <div className="hidden lg:flex justify-center animate-fade-in">
             <img
-              src={zenith}
+              src="/zenith.png"
               alt="Professional woman character"
-              className="w-64 h-auto object-contain hover:scale-105 transition-transform duration-300"
+              className="w-64 h-79 object-contain hover:scale-105 transition-transform duration-300"
             />
           </div>
 
@@ -69,9 +89,9 @@ const Index = () => {
             style={{ animationDelay: "100ms" }}
           >
             <img
-              src={zest}
+              src="/zest.png"
               alt="Professional man character"
-              className="w-64 h-auto object-contain hover:scale-105 transition-transform duration-300"
+              className="w-64 h-49 object-contain hover:scale-105 transition-transform duration-300"
             />
           </div>
         </div>
