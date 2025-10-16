@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
-
+import zest from "../assets/zest.png";
+import zenith from "../assets/zenith.png";
 const Index = () => {
   return (
     <section className="min-h-screen flex items-center justify-center bg-background relative overflow-hidden py-12 px-4">
@@ -8,20 +9,7 @@ const Index = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-background via-muted/30 to-background" />
       
       <div className="container mx-auto relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center max-w-7xl mx-auto">
-          {/* Left Character - Woman in red blazer */}
-          <div className="hidden lg:flex justify-center animate-fade-in">
-            <img 
-              src="/zenith.png" 
-              alt="Professional woman character"
-              className="w-64 h-auto object-contain hover:scale-105 transition-transform duration-300"
-            />
-          </div>
-
-          {/* Center Content */}
-          <div className="text-center space-y-6 animate-scale-in">
-            {/* University Title */}
-            <h1 className="text-base md:text-lg lg:text-xl font-semibold text-foreground tracking-wide uppercase">
+      <h1 className="text-base md:text-lg lg:text-xl font-semibold text-foreground tracking-wide uppercase">
               Anna University – Madras Institute of Technology Campus
             </h1>
             
@@ -30,6 +18,20 @@ const Index = () => {
               We cordially invite you to the 42<sup>nd</sup> year inauguration of
             </p>
             
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center max-w-7xl mx-auto">
+          {/* Left Character - Woman in red blazer */}
+          <div className="hidden lg:flex justify-center animate-fade-in">
+            <img 
+              src={zenith}
+              alt="Professional woman character"
+              className="w-64 h-auto object-contain hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+
+          {/* Center Content */}
+          <div className="text-center space-y-6 animate-scale-in">
+            {/* University Title */}
+          
             {/* PDA Title */}
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary leading-tight">
               Personality Development Association
@@ -63,7 +65,7 @@ const Index = () => {
           {/* Right Character - Man in brown suit */}
           <div className="hidden lg:flex justify-center animate-fade-in" style={{ animationDelay: '100ms' }}>
             <img
-              src="/zest.png"
+              src={zest}
               alt="Professional man character"
               className="w-64 h-auto object-contain hover:scale-105 transition-transform duration-300"
             />
